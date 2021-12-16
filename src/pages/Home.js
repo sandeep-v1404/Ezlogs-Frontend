@@ -1,12 +1,11 @@
 import React from "react";
 import { useState } from "react";
 import axios from "axios";
-import uploadLoader from "../images/uploadLoader.gif";
 import Loader from "react-loader-spinner";
 import { FaWindowClose } from "react-icons/fa";
-import { MDBCloseIcon } from "react-icons/bs";
+import { useDropzone } from 'react-dropzone';
 
-const Hero = () => {
+const Home = () => {
   const [descriptionError, setDescriptionError] = useState(false);
   const [description, setDescription] = useState("");
   const [file, setFile] = useState();
@@ -195,4 +194,4 @@ const Hero = () => {
   );
 };
 
-export default Hero;
+export default Home;
